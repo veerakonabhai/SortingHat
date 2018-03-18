@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hp"
+    tools:context="com.example.veerareddykonabhai.sortinghat.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/hat_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/hat"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hat_img"
+            android:layout_centerHorizontal="true"
+            android:text="FILL IN YOUR DETAILS"
+            android:textColor="@color/colorAccent"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:hint="FIRST NAME"
+            android:inputType="textCapWords"
+            android:textColor="@color/fortext"
+            android:textColorHint="@color/fortexthint"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+        <EditText
+            android:id="@+id/ticketno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fname"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:hint="TICKET NUMBER"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/fortext"
+            android:textColorHint="@color/fortexthint"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ticketno"
+            android:layout_marginTop="41dp"
+            android:text="ARE YOU SURE TO SORT YOU?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/yes1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text1"
+            android:layout_alignStart="@+id/text1"
+            android:layout_below="@+id/text2"
+            android:onClick="yes"
+            android:text="YES"
+            android:textColor="@color/fortext"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/no1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text1"
+            android:layout_alignRight="@+id/text1"
+            android:layout_below="@+id/text2"
+            android:onClick="no"
+            android:text="NO"
+            android:textColor="@color/fortext"
+            android:textSize="18sp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/yes1"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp"
+            android:src="@drawable/snitch" />
+    </RelativeLayout>
+
+</ScrollView>
+

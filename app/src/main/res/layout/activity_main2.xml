@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hp2"
+    tools:context="com.example.veerareddykonabhai.sortinghat.Main2Activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="xyz"
+        android:textColor="@color/white"
+        android:id="@+id/text3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="!"
+        android:textColor="@color/white"
+        android:id="@+id/text4"
+        android:layout_alignBaseline="@+id/text3"
+        android:layout_alignBottom="@+id/text3"
+        android:layout_toRightOf="@+id/text3"
+        android:layout_toEndOf="@+id/text3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Now you are at the last step for getting entry into"
+        android:textSize="25sp"
+        android:id="@+id/text6"
+        android:padding="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/text3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="'AMUSANT 2K17'"
+        android:textColor="@color/fortext"
+        android:id="@+id/text7"
+        android:layout_below="@+id/text6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm ready"
+        android:textColor="@color/white"
+        android:id="@+id/ready"
+        android:onClick="ready"
+        android:textSize="18sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/text7"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm not ready"
+        android:textColor="@color/white"
+        android:id="@+id/notready"
+        android:onClick="notready"
+        android:textSize="18sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/ready"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
